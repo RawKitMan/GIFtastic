@@ -48,7 +48,7 @@ $(document).ready(function () {
         var search = $(this).attr("data-value");
 
 
-        queryURL = "https://api.giphy.com/v1/gifs/search?q=" + getQueryURL(search) +  "&api_key=" + apiKey;
+        queryURL = "https://api.giphy.com/v1/gifs/search?q=" + getQueryURL(search) +  "&limit=10&api_key=" + apiKey;
 
         $.ajax({
             url: queryURL,
@@ -59,6 +59,11 @@ $(document).ready(function () {
             gifHolder.addClass("gifs");
             for (var k = 0; k < response.data.length; k++) {
 
+                var figure = $("<figure>");
+                figure.addClass("float-left");
+                var ratingCaption = $("<figcaption>");
+                ratingCaption.addClass("ml-2");
+                ratingCaption.text("Rating: " + response.data[k].rating.toUpperCase());
                 var gifImg = $("<img >");
                 gifImg.addClass("random-gif");
                 gifImg.attr("src", response.data[k].images.fixed_height_still.url);
@@ -66,7 +71,9 @@ $(document).ready(function () {
                 gifImg.attr("data-still", response.data[k].images.fixed_height_still.url);
                 gifImg.attr("data-animated", response.data[k].images.fixed_height.url);
                 gifImg.attr("status", "still");
-                gifHolder.append(gifImg);
+                figure.append(ratingCaption);
+                figure.append(gifImg);
+                gifHolder.append(figure);
             }
 
             $("#gif-display").prepend(gifHolder);
