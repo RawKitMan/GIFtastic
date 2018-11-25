@@ -13,7 +13,47 @@
 
 <body>
 
-    <div id="buttons"></div>
+    <div class="container align-center mt-5">
+        <div class="row">
+            <div class="offset-md-3 col-lg-6">
+                <div id="input" class="p-3 border border-rounded border-success">
+                    <form id="gif-form">
+                        <div class="form-row">
+                            <label for="gif-search" class="col-sm-7 col-form-label col-form-label-sm">What kind of GIFs
+                                do you want to see?</label>
+                            <div class="col-sm-5">
+                                <input type="text" id="gif-input" class="form-control form-control-sm">
+                            </div>
+                            <div class=" offset-sm-3 col-sm-5 mt-3">
+                                <input id="add-button" type="submit" value="Click to add a GIF Search">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "instructions" class='container-fluid mt-4'>
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <p class="bg-light border border-rounded border-success p-5">Click any of the buttons below to show a bunch of related GIFs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="offset-md-1 col-lg-10">
+                <div id="buttons" class="border border-rounded border-success"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4 ml-1">
+        <div id="gif-display"></div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
