@@ -1,2 +1,2 @@
 # GIFtastic
-Here's a way you can see all your favorite GIFS!!
+Here's a way you can see all your favorite GIFS....or at least GIFs of a particular thing you like. The user can click any of the preloaded GIF topic buttons and see 25 GIFS related to that topic. I could add a limit aspect but....why....GIFS are freakin great!!! Every GIF is pulled from GIPHY's API and will start off still when loaded onto the page. The user has to click the loaded GIF in order for it to play. If the user wants the GIF to pause back to the still, the user needs to click on the GIF again. So freakin fun.
