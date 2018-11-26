@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <!--Additional styling-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>GIFTastic Generator</title>
 </head>
 
 <body>
 
+    <!--Holds the form that allows the user to add GIF Topic buttons-->
     <div class="container align-center mt-5">
         <div class="row">
             <div class="offset-md-3 col-lg-6">
@@ -35,6 +39,7 @@
         </div>
     </div>
 
+    <!--OK we have the buttons....now what?-->
     <div id = "instructions" class='container-fluid mt-4'>
         <div class="row">
             <div class="offset-md-3 col-md-6">
@@ -43,6 +48,7 @@
         </div>
     </div>
 
+    <!--Shows all the GIF topic buttons available-->
     <div class="container mt-4">
         <div class="row">
             <div class="offset-md-1 col-lg-10">
@@ -51,13 +57,15 @@
         </div>
     </div>
 
+    <!--Display the GIFs-->
     <div class="container-fluid mt-4 ml-1">
         <div id="gif-display"></div>
     </div>
 
-
+    <!--jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+    <!--JS File that makes all of this work-->
     <script src="assets/javascript/giftastic.js"></script>
 </body>
 
